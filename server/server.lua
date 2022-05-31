@@ -333,7 +333,7 @@ end)
 
 CreateThread(function()
     while true do
-        Wait(2000)                                          --Change to send every minute in game sync
+        Wait(60000)                                          --Change to send every minute in game sync
         TriggerClientEvent('qb-weathersync:client:SyncTime', -1, baseTime, timeOffset, freezeTime)
     end
 end)
